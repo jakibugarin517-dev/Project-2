@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Your Giga Jackal</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A virtual white jackal pup you can feed, play with, exercise and put down for a nap.">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>🐺 This is your Giga Jackal Pup</h1>
+    </header>
+
+    <main>
+      <section class="pet-image-container">
+        <!-- speech bubble: his comment shows up here after every button press -->
+        <div class="speech-bubble" id="speech">awoo!! pick something to do w me</div>
+        <img class="pet-image" src="images/jackal.png" alt="A cute white and gold jackal with a blue tongue sticking out">
+      </section>
+
+      <section class="dashboard">
+        <div>Name: <strong><span class="name"></span></strong></div>
+        <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
+        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        <!-- happiness bar: javascript sets how wide it is w jquery .width() -->
+        <div class="bar"><div class="bar-fill happiness-bar"></div></div>
+        <!-- new stat that goes w the new nap button -->
+        <div>Energy: <strong><span class="energy"></span> / 100</strong></div>
+        <div class="bar"><div class="bar-fill energy-bar"></div></div>
+
+        <div class="button-container">
+          <button class="treat-button">🦴 Treat</button>
+          <button class="play-button">🎾 Play</button>
+          <button class="exercise-button">🏃 Exercise</button>
+          <!-- new action button i added -->
+          <button class="nap-button">😴 Nap</button>
+        </div>
+      </section>
+
+      <!-- diary: newest message gets added at the TOP w jquery .prepend() -->
+      <section class="log-section">
+        <h2>Anubis' diary</h2>
+        <ul id="log"></ul>
+      </section>
+    </main>
+
+    <!-- loading jquery. it has to be https bc the page is too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+  </body>
+</html>
