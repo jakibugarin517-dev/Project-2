@@ -1,8 +1,8 @@
 # giga jackal 🐺
 
-this is my giga pet project for comp 484. its a lil virtual white jackal pup named Anubis (anubis vibes lol). u can feed him, play w him, exercise him, or put him down for a nap and he literally talks back to u after every click.
+this is my giga pet project for comp 484. its a lil virtual white jackal pup named Anubis. u can feed him, play w him, exercise him, or put him down for a nap and he literally talks back to u after every click.
 
-the image is my own art!!
+the image is my own art!
 
 ## how to run it
 
@@ -30,7 +30,7 @@ the image is my own art!!
 
 if his energy is too low he's too tired to play or exercise and he'll tell u he needs a nap instead.
 
-## the assignment stuff
+## the assignment 
 
 - **pet_info object**: has name, weight, happiness (+ energy that i added)
 - **button behaviors**: treat, play, exercise all do what the assignment says
